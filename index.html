@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>ToDoList</title>
+		<link rel="stylesheet" href="assets/todo.css">
+		<link rel="stylesheet" href="assets/form-cell-bar.css">
+		<link rel="stylesheet" href="assets/todo-checkbox.css">
+		<link rel="stylesheet" href="assets/btn-ctlrs-f.css">
+	</head>
+	<body>
+		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+		<div class="wrapper">
+			<div class="form">
+		<input class="input-text" type="text" name="text" id="add-text" placeholder="Введите дело" required="required">
+				<div class="form-cell">
+					<div class="form-bar">
+						<input class="checkbox" type="checkbox" id="allCheck" name="all"><label for="allCheck"></label>
+					</div>
+					<div class="btn-todo-operations">
+						<button class="btn-add" id="add" type="button" data-add></button>
+						<button class="btn-del" id="del" type="button" data-del></button>
+					</div>
+					<div class="btn-todo-settings">
+						<button class="btn-cog" id="cog" type="button" data-cog></button>
+					</div>
+				</div>
+				<div class="todo" id="item-todo">
+					<ul class="list" id="list-todo">
+					</ul>
+				</div>
+				<div class="buttons-groop-control">
+					<div class="buttons-controls">
+						<button id="prevList" class="prev" type="button" data-prev>Prevision</button>
+						<button id="nextList" class="next" type="button" data-next>Next</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="todoList.js"></script>
+	</body>
+</html>

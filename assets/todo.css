@@ -1,0 +1,132 @@
+@font-face {
+  font-family: LucidaGrant;
+
+  src: url('buttons/tooltips/LucidaGrande.ttf');
+}
+
+@font-face {
+  font-family: LucidaGrantBold;
+
+  src: url('fonts/LucidaGrandeBold.ttf');
+}
+
+html,
+body {
+  font-family: LucidaGrantBold;
+
+  height: 99.99%;
+  margin: 0;
+  padding: 0;
+
+  color: #8b8f97;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  min-height: 100%;
+
+  background: url('bg/Color Fill 1.png');
+
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.input-text {
+  position: absolute;
+  top: -10%;
+  left: 7%;
+
+  width: 255px;
+  height: 23px;
+  padding-left: 7px;
+
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1px 1px 1px #807777;
+  box-shadow: 0 1px 1px 1px #807777;
+}
+
+.form>input[type='text'] {
+  font-family: monospace;
+  font-size: 15px;
+  color: #676767;
+
+  text-align: left;
+  letter-spacing: 1px;
+  transition: .8s;
+}
+
+.form>input[type='text']:hover {
+  -webkit-box-shadow: 0 1px 3px 1px #9a5a33;
+  box-shadow: 0 1px 3px 1px #9a5a33;
+}
+
+.form>input[type='text']:focus {
+  background: #FFFAE9;
+  border: none;
+  outline: #b6b1ad solid 1px;
+}
+
+
+
+.form {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 35px 25px 25px 25px;
+
+  background: #fff;
+  -webkit-box-shadow: 0 0 2px .5px rgba(0, 0, 0, .4),
+  0 6px 0 -2px #fff,
+  0 9px 2px -4px rgba(0, 0, 0, .2),
+  0 12px 0 -6px #fff,
+  0 16px 2px -8px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 2px .5px rgba(0, 0, 0, .4),
+  0 6px 0 -2px #fff,
+  0 9px 2px -4px rgba(0, 0, 0, .2),
+  0 12px 0 -6px #fff,
+  0 16px 2px -8px rgba(0, 0, 0, .2);
+}
+
+.form:before {
+  position: absolute;
+
+  display: block;
+  float: left;
+
+  height: 294px;
+  margin-left: 30px;
+  padding: 3px;
+
+  content: ' ';
+
+  border-right: 1px solid #f2e3df;
+  border-left: 1px solid #f2e3df;
+}
+
+.todo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  height: 75%;
+
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
