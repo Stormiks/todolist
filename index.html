@@ -4,17 +4,18 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<title>ToDoList</title>
 		<link rel="stylesheet" href="assets/todo.css">
 		<link rel="stylesheet" href="assets/form-cell-bar.css">
+		<link rel="stylesheet" href="assets/form-settings.css">
 		<link rel="stylesheet" href="assets/todo-checkbox.css">
 		<link rel="stylesheet" href="assets/btn-ctlrs-f.css">
 	</head>
 	<body>
-		<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-		<div class="wrapper">
+		<div class="wrapper" id="page">
 			<div class="form">
-		<input class="input-text" type="text" name="text" id="add-text" placeholder="Введите дело" required="required">
+				<input class="input-text" type="text" name="text" id="add-text" placeholder="Введите дело" required="required">
 				<div class="form-cell">
 					<div class="form-bar">
 						<input class="checkbox" type="checkbox" id="allCheck" name="all"><label for="allCheck"></label>
@@ -25,18 +26,37 @@
 					</div>
 					<div class="btn-todo-settings">
 						<button class="btn-cog" id="cog" type="button" data-cog></button>
-					</div>
-				</div>
+						<div class="cog-tooltips">Настройки</div>
+						<div id="sett" class="settings">
+							<h5>Настройки</h5>
+							<div class="s__font-size options">
+								<label for="op1">Размер шрифта:
+									<input class="opt" id="todo-font-size" type="range" name="fSize" value="0" max="30">
+								</label>
+							</div><!--s__font-size-->
+							<div class="s__back-color options">
+								<label for="op2">Фон списка:
+									<input class="opt" id="todo-background-color" type="text" name="bColor" maxlength="6">
+								</label>
+							</div><!--s__back-color-->
+							<div class="s__font-color options">
+								<label for="op3">Цвет шрифта дел:
+									<input class="opt" id="todo-font-color" type="text" name="fColor" maxlength="6">
+								</label>
+							</div><!--s__font-color-->
+						</div><!--settings-->
+					</div><!--btn-todo-settings-->
+				</div><!--form-cell-->
 				<div class="todo" id="item-todo">
 					<ul class="list" id="list-todo">
 					</ul>
 				</div>
-				<div class="buttons-groop-control">
+				<!-- <div class="buttons-groop-control">
 					<div class="buttons-controls">
 						<button id="prevList" class="prev" type="button" data-prev>Prevision</button>
 						<button id="nextList" class="next" type="button" data-next>Next</button>
 					</div>
-				</div>
+				</div> -->
 			</div>
 		</div>
 		<script type="text/javascript" src="todoList.js"></script>

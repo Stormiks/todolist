@@ -10,6 +10,12 @@
   src: url('fonts/LucidaGrandeBold.ttf');
 }
 
+@font-face {
+  font-family: OldComedy;
+
+  src: url('fonts/OldComedy.ttf');
+}
+
 html,
 body {
   font-family: LucidaGrantBold;
@@ -62,11 +68,13 @@ body {
 .form>input[type='text'] {
   font-family: monospace;
   font-size: 15px;
-  color: #676767;
 
+  -webkit-transition: .8s;
+  transition: .8s;
   text-align: left;
   letter-spacing: 1px;
-  transition: .8s;
+
+  color: #676767;
 }
 
 .form>input[type='text']:hover {
@@ -75,15 +83,14 @@ body {
 }
 
 .form>input[type='text']:focus {
-  background: #FFFAE9;
   border: none;
   outline: #b6b1ad solid 1px;
+  background: #fffae9;
 }
-
-
 
 .form {
   position: relative;
+
   width: 300px;
   height: 300px;
   margin: 35px 25px 25px 25px;
